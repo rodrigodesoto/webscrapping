@@ -2,14 +2,17 @@
   "name": "webscrapper-puppeteer",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "scrap.js",
   "scripts": {
-    "start": "node index"
+    "start": "node scrap"
   },
   "keywords": [],
   "author": "LuizTools",
   "license": "MIT",
   "dependencies": {
-    "puppeteer": "^21.10.0"
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
+    "puppeteer": "^21.10.0",
+    "webscrapper-puppeteer": "file:"
   }
 }
