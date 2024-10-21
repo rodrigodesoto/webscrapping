@@ -1,5 +1,6 @@
 const puppeteer = require('puppeteer');
 var tickerEnum = require('./ticker-enum');
+const util = require('./util');
 
 async function main() {
   // Iniciar o navegador e abrir uma nova página
@@ -61,6 +62,8 @@ async function main() {
                 horaFechamento,
               };
             }, ticket);
+
+            data.horaFechamento = util.converterHora(data.horaFechamento);
 
             console.log(data);
         };
